@@ -1,0 +1,18 @@
+:root {
+  --brand-paper: #FBFBFA;
+  --brand-surface: #FFFFFF;
+  --brand-ink: #101318;
+  --brand-signal: #1E4DD8;
+  --brand-verified: #8C6D1F;
+  --brand-muted: #5B6270;
+  --brand-line: #E3E5E9;
+  --ui-dark-bg: #0C0F14;
+  --ui-dark-surface: #161A21;
+  --state-disputed: #B03A2E;
+  --state-pending: #7A6A4E;
+  --font-body: Inter, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Inter + JetBrains Mono — SIL OFL 1.1. */
+/* --brand-verified is applied ONLY to a record that satisfies the published condition. */

@@ -1,0 +1,327 @@
+{
+  "brand": "athlytica",
+  "freeze_contract": "00_GOVERNANCE/BRAND-V1-FREEZE.md",
+  "generated_by": "brand-pipeline/build.py",
+  "note": "GENERATED. Do not hand-edit. Every entry traces to a frozen master by sha256.",
+  "outputs": [
+    {
+      "frozen_source": "00_GOVERNANCE/FONTS/OFL.txt",
+      "kind": "licence",
+      "output": "fonts/OFL.txt",
+      "output_sha256": "108b4e57c9c796d3d38d0428ca7ee39de47ad93187302718d9b2d8864b9b716b",
+      "source_sha256": "108b4e57c9c796d3d38d0428ca7ee39de47ad93187302718d9b2d8864b9b716b"
+    },
+    {
+      "family": "Inter",
+      "frozen_source": "00_GOVERNANCE/FONTS/Inter-400.ttf",
+      "kind": "font",
+      "output": "fonts/inter-400.woff2",
+      "output_sha256": "1f2bd5bbace358ec3493aa5bd054106c08de0fdf60025decc562b2e8090e4258",
+      "source_sha256": "f7a725ea8df78f93325720716bb960e586818bd25c22aa1f00dc5bd402069a41",
+      "weight": 400
+    },
+    {
+      "family": "Inter",
+      "frozen_source": "00_GOVERNANCE/FONTS/Inter-500.ttf",
+      "kind": "font",
+      "output": "fonts/inter-500.woff2",
+      "output_sha256": "205da417d0b452b1c84392619a0fd7180db7f30d47df06e8a045751b3f46ea18",
+      "source_sha256": "9584d4bbbfb0da36afe8ead00faddca21feb159f3c2cd65b22efa97c5b861abb",
+      "weight": 500
+    },
+    {
+      "family": "Inter",
+      "frozen_source": "00_GOVERNANCE/FONTS/Inter-600.ttf",
+      "kind": "font",
+      "output": "fonts/inter-600.woff2",
+      "output_sha256": "f1c9c8e5df86b7a0b776512e764fd1133ddd9afc2fbbcec810f35699a746db8f",
+      "source_sha256": "0fb91f161ca402aba43ccf0905dd9d63edcd61cd3e85c89dfef67d187714564b",
+      "weight": 600
+    },
+    {
+      "family": "Inter",
+      "frozen_source": "00_GOVERNANCE/FONTS/Inter-700.ttf",
+      "kind": "font",
+      "output": "fonts/inter-700.woff2",
+      "output_sha256": "438f57de5bf1435560563cf2e23cad9b26bcc03712245c6aa328eab6185bbaab",
+      "source_sha256": "915500ae00554fca2883123473f7297d5b2c0fbf492bb4ded17eca690d033d6b",
+      "weight": 700
+    },
+    {
+      "family": "JetBrains Mono",
+      "frozen_source": "00_GOVERNANCE/FONTS/JetBrainsMono-400.ttf",
+      "kind": "font",
+      "output": "fonts/jetbrains-mono-400.woff2",
+      "output_sha256": "b0024a3c231a74a7c174a55d7c489facdc37c1024a0d4506885bc5e1d38e30c4",
+      "source_sha256": "d9cd2c744c6ad76e9690169e38093a1e61df709d262c798033d9a89402210c8d",
+      "weight": 400
+    },
+    {
+      "family": "JetBrains Mono",
+      "frozen_source": "00_GOVERNANCE/FONTS/JetBrainsMono-500.ttf",
+      "kind": "font",
+      "output": "fonts/jetbrains-mono-500.woff2",
+      "output_sha256": "21729d43093f71eb7e3e39215cb670592f650fb39893079ca08babdd11fdb623",
+      "source_sha256": "82e0d942f379a3465cfb912822bee18170e5e09586b3e7105696d7cd98a7d550",
+      "weight": 500
+    },
+    {
+      "family": "JetBrains Mono",
+      "frozen_source": "00_GOVERNANCE/FONTS/JetBrainsMono-700.ttf",
+      "kind": "font",
+      "output": "fonts/jetbrains-mono-700.woff2",
+      "output_sha256": "0f97b1d95c2aa0f54c03ddd48a72e582d224a4e7e18b3d13edfbe10ca97b3aef",
+      "source_sha256": "9bd36c93bbf9540ce109728fbb6fba3c960ef254cb59be935f1522b47af3e92b",
+      "weight": 700
+    },
+    {
+      "frozen_source": "Athlytica/03_DIGITAL/apple-touch-180.png",
+      "kind": "icons",
+      "output": "icons/apple-touch-180.png",
+      "output_sha256": "feac6b81a8a66da7a7a8374eeb8354161a898a75b5c68866c483d70fc706339c",
+      "source_sha256": "feac6b81a8a66da7a7a8374eeb8354161a898a75b5c68866c483d70fc706339c"
+    },
+    {
+      "frozen_source": "Athlytica/03_DIGITAL/favicon-16.png",
+      "kind": "icons",
+      "output": "icons/favicon-16.png",
+      "output_sha256": "00ca56c8a08804a8a07516c0ecde633629e9f8413c202b6ed5029cea1af512ed",
+      "source_sha256": "00ca56c8a08804a8a07516c0ecde633629e9f8413c202b6ed5029cea1af512ed"
+    },
+    {
+      "frozen_source": "Athlytica/03_DIGITAL/favicon-32.png",
+      "kind": "icons",
+      "output": "icons/favicon-32.png",
+      "output_sha256": "8d0a2b3d5a426ad60e5a2d485572fd2045b6745dea2b929be5dec157d04089fc",
+      "source_sha256": "8d0a2b3d5a426ad60e5a2d485572fd2045b6745dea2b929be5dec157d04089fc"
+    },
+    {
+      "frozen_source": "Athlytica/03_DIGITAL/favicon-48.png",
+      "kind": "icons",
+      "output": "icons/favicon-48.png",
+      "output_sha256": "f9542c029990f3c6057b504085dd31e4cb77e939d20114323cef8be16e965790",
+      "source_sha256": "f9542c029990f3c6057b504085dd31e4cb77e939d20114323cef8be16e965790"
+    },
+    {
+      "frozen_source": "Athlytica/03_DIGITAL/icon-192.png",
+      "kind": "icons",
+      "output": "icons/icon-192.png",
+      "output_sha256": "e0fe500c5aad398a5200e8729b55278c11ce7e904add368df0e742d98158588c",
+      "source_sha256": "e0fe500c5aad398a5200e8729b55278c11ce7e904add368df0e742d98158588c"
+    },
+    {
+      "frozen_source": "Athlytica/03_DIGITAL/icon-512.png",
+      "kind": "icons",
+      "output": "icons/icon-512.png",
+      "output_sha256": "5cd31586eb7c3d7149242553022fb45291e5f7b0deea1c396400d7cfa8218c09",
+      "source_sha256": "5cd31586eb7c3d7149242553022fb45291e5f7b0deea1c396400d7cfa8218c09"
+    },
+    {
+      "frozen_source": "Athlytica/03_DIGITAL/maskable-512.png",
+      "kind": "icons",
+      "output": "icons/maskable-512.png",
+      "output_sha256": "48d4aa7b27633bd59b90b1bf28d0533e354906566f878fdf3c57b1c710aeb337",
+      "source_sha256": "48d4aa7b27633bd59b90b1bf28d0533e354906566f878fdf3c57b1c710aeb337"
+    },
+    {
+      "frozen_source": "Athlytica/01_LOGO/SVG/lockup-compact.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "773d84980e600c2d866771aeea0232abe0224d07bff7af883aa45c9b507be5ab",
+      "kind": "svg",
+      "output": "logo/lockup-compact.svg",
+      "output_sha256": "75b2d5a500ddb563faa238849e6d36091ea11c925e6215c227fe133c6b2d1c4a",
+      "source_sha256": "3510ba235e32aba764f54a238776e83de65ee1a2cae178c590aa5c1bd44d5759"
+    },
+    {
+      "frozen_source": "Athlytica/01_LOGO/SVG/lockup-horizontal-reversed.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "0f29cfce36b4950f732e2996a9caa7fdc793900d971443777ae2edff45c78b97",
+      "kind": "svg",
+      "output": "logo/lockup-horizontal-reversed.svg",
+      "output_sha256": "5f39a93728c322b0cc9717b0831570ad18d5d1ae1555856d50e9345e729b6a02",
+      "source_sha256": "a0e036221c2dfca300f43f4fdac419b170dfd293e7746c45498e7269c768df48"
+    },
+    {
+      "frozen_source": "Athlytica/01_LOGO/SVG/lockup-horizontal.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "0f29cfce36b4950f732e2996a9caa7fdc793900d971443777ae2edff45c78b97",
+      "kind": "svg",
+      "output": "logo/lockup-horizontal.svg",
+      "output_sha256": "bd70015968fc8d63bb0a4f189c0ab9b40b1d5212d30eaaf6c23423b9fd3dbde7",
+      "source_sha256": "85146c40d1a5541ec76367e00b6968fa0641640947bd73d9fddaf5e9a4ca5cc3"
+    },
+    {
+      "frozen_source": "Athlytica/01_LOGO/SVG/lockup-stacked.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "d207abcf88dbbe95f9b885c2ea8fa8bbed6890ac6936c2dd994673106ddbbcc0",
+      "kind": "svg",
+      "output": "logo/lockup-stacked.svg",
+      "output_sha256": "e245ba7079828ed1dc880396f82640ebfa97b2f74029b75828394cfd2afcb31b",
+      "source_sha256": "2a5d0e1108a84f2c888bb029d5f9b4e2f49abdbedd471c80e42c5d1d2cd1c3f6"
+    },
+    {
+      "frozen_source": "Athlytica/01_LOGO/SVG/mark-ink.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "17f99a32f0ce4ff2ba2469cc1addcd328153a9ef42f5d4138a4fe496ccf1fc29",
+      "kind": "svg",
+      "output": "logo/mark-ink.svg",
+      "output_sha256": "37b3888a16d944e13d79c4486b3b77b58d03544c6d4e5953dcbef6cd3edc4630",
+      "source_sha256": "a95c812abbc069d904b782817b795f9df050e47066800f580d4f579480204aae"
+    },
+    {
+      "frozen_source": "Athlytica/01_LOGO/SVG/mark-reversed.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "a3cd17167c76ae7fe44b11a3a71ae5c5947682c6940172a6ee8e026fdda16ee0",
+      "kind": "svg",
+      "output": "logo/mark-reversed.svg",
+      "output_sha256": "8d87e815c17c1615703b4edef06c2e1350176ef79de8450201e55be48e24f83b",
+      "source_sha256": "ffda9c2b0a13dc57c5bc8b6d86975b4e034910b4f822e6312857d833b3e6ccad"
+    },
+    {
+      "frozen_source": "Athlytica/01_LOGO/SVG/mark-standard.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "dada0f8c6fe7b5e6149d310ded98215addfea84aeaa12d76d8afbe8f46505077",
+      "kind": "svg",
+      "output": "logo/mark-standard.svg",
+      "output_sha256": "e8475264acc536004ace17f62ffaafdcd905c5333b9edf7802fd31e4e7b3af1b",
+      "source_sha256": "f11888fd676732fc8440a7d335fe4d953d81ba85551cde4ba1ede624969c0e3c"
+    },
+    {
+      "frozen_source": "Athlytica/01_LOGO/SVG/mark-verified.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "dada0f8c6fe7b5e6149d310ded98215addfea84aeaa12d76d8afbe8f46505077",
+      "kind": "svg",
+      "output": "logo/mark-verified.svg",
+      "output_sha256": "108116fabf8de1a48a4986cc35515fff022692bc938e5ef754e29907ff2c9687",
+      "source_sha256": "34a47a17a66915b5e7757bebf5ebc20b50a03dc0cf34cf8fd6403200ab2146cb"
+    },
+    {
+      "frozen_source": "Athlytica/01_LOGO/SVG/mark-white.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "17f99a32f0ce4ff2ba2469cc1addcd328153a9ef42f5d4138a4fe496ccf1fc29",
+      "kind": "svg",
+      "output": "logo/mark-white.svg",
+      "output_sha256": "6be356741add48b558e6051d1deaf00c3d34b6e559e0d52412634a082096f697",
+      "source_sha256": "585a6998598413d6f71b372a9c3e8a0e3f31876ef96d8c4b6e089eb216938d02"
+    },
+    {
+      "frozen_source": "Athlytica/02_SEAL/seal-ink.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "d14ef027dbdf53245e723f65d0545a3254500d3a4a35ce3c4aa5b16e90ee812f",
+      "kind": "svg",
+      "output": "logo/seal-ink.svg",
+      "output_sha256": "10aee792e6ab501f4a14600b91f62112e03f911ae35febb851d48ef017024a3e",
+      "source_sha256": "82f9e53f97fa5a903bbb567822e9a0cc293007576ee108bc904b2cde140b8fe4"
+    },
+    {
+      "frozen_source": "Athlytica/02_SEAL/seal-outline.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "d14ef027dbdf53245e723f65d0545a3254500d3a4a35ce3c4aa5b16e90ee812f",
+      "kind": "svg",
+      "output": "logo/seal-outline.svg",
+      "output_sha256": "7ca198104142be294b344a9ac945911c142ddbf7bbc599ea85dc1d6129957546",
+      "source_sha256": "ed1cc10e4a23fb50434579ef62bcd3fe6ac004747995676309251dd7249ae2b6"
+    },
+    {
+      "frozen_source": "Athlytica/02_SEAL/seal-verified.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "d14ef027dbdf53245e723f65d0545a3254500d3a4a35ce3c4aa5b16e90ee812f",
+      "kind": "svg",
+      "output": "logo/seal-verified.svg",
+      "output_sha256": "898fa63a336ef0fea44d4d8ab745f48c889e5ed348abb95640a02204a33ebce7",
+      "source_sha256": "8e85a84f698b802babee002df091e141e182ff73bdffe21ef452ab063f19cbfc"
+    },
+    {
+      "frozen_source": "Athlytica/01_LOGO/SVG/wordmark-current.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "b61603af63a80e40049907f56b31557fbb917ee4b4243dd73b41ca79b24e544e",
+      "kind": "svg",
+      "output": "logo/wordmark-current.svg",
+      "output_sha256": "930562a5a65147c4dd129792e8ca4e0d3c1e7a96c753592022a449a0bd654b0a",
+      "source_sha256": "b54de61cbee781a72f24eecd4242c5634fa67de85656da1cd29d33f19e1f6986"
+    },
+    {
+      "frozen_source": "Athlytica/01_LOGO/SVG/wordmark-signal.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "b61603af63a80e40049907f56b31557fbb917ee4b4243dd73b41ca79b24e544e",
+      "kind": "svg",
+      "output": "logo/wordmark-signal.svg",
+      "output_sha256": "b4d6f2801fc9c6de2c346db4f3df23d4026e8ed2bcccad9b27b6115d2c57c8b3",
+      "source_sha256": "2b590c0766cf38235c0e0f73c5c4afe874e8a69fbdb550b03b7e279f8e429026"
+    },
+    {
+      "frozen_source": "Athlytica/01_LOGO/SVG/wordmark-white.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "b61603af63a80e40049907f56b31557fbb917ee4b4243dd73b41ca79b24e544e",
+      "kind": "svg",
+      "output": "logo/wordmark-white.svg",
+      "output_sha256": "36d24e0509cd96ea5ab8d1adff2e68ba91298a64073c7d62c80e315324cd3528",
+      "source_sha256": "3c34a10da3494a3ec46ab6be3b7fdb8c222ffabdd303b6ccc5abcf47f94af578"
+    },
+    {
+      "frozen_source": "Athlytica/01_LOGO/SVG/wordmark.svg",
+      "geometry_invariant": true,
+      "geometry_sha256": "b61603af63a80e40049907f56b31557fbb917ee4b4243dd73b41ca79b24e544e",
+      "kind": "svg",
+      "output": "logo/wordmark.svg",
+      "output_sha256": "610f7e7c9e378c019cdd9b05bdcbb31f2e10e54fc9e2cf3410225e020bb5c2d1",
+      "source_sha256": "9f8a4efcca1044bedcadd9d3dbe9fa6a1ba96f52c98571061959d64c8f724a1a"
+    },
+    {
+      "frozen_source": "Athlytica/03_DIGITAL/cover-facebook-820x312.png",
+      "kind": "social",
+      "output": "social/cover-facebook-820x312.png",
+      "output_sha256": "a3f68a517107c3ffb02da3b1f3902eada3ea6ce49782f5cd7ee9b326ebed0661",
+      "source_sha256": "a3f68a517107c3ffb02da3b1f3902eada3ea6ce49782f5cd7ee9b326ebed0661"
+    },
+    {
+      "frozen_source": "Athlytica/03_DIGITAL/cover-linkedin-1128x191.png",
+      "kind": "social",
+      "output": "social/cover-linkedin-1128x191.png",
+      "output_sha256": "026eb30ca1fda69ee73aab3b76ecd8b79de02d0f1a8421c07f25e98d6a456803",
+      "source_sha256": "026eb30ca1fda69ee73aab3b76ecd8b79de02d0f1a8421c07f25e98d6a456803"
+    },
+    {
+      "frozen_source": "Athlytica/03_DIGITAL/cover-x-1500x500.png",
+      "kind": "social",
+      "output": "social/cover-x-1500x500.png",
+      "output_sha256": "d4c8e0b183548cf4cfad6bc0b368e05e44d9144823c16e2526aeb0cb7e53c444",
+      "source_sha256": "d4c8e0b183548cf4cfad6bc0b368e05e44d9144823c16e2526aeb0cb7e53c444"
+    },
+    {
+      "frozen_source": "Athlytica/03_DIGITAL/og-default-1200x630.png",
+      "kind": "social",
+      "output": "social/og-default-1200x630.png",
+      "output_sha256": "b2d6c8c8254d205dac6e5995925a76b45952bca43741e58f50e81f1be7f4d854",
+      "source_sha256": "b2d6c8c8254d205dac6e5995925a76b45952bca43741e58f50e81f1be7f4d854"
+    },
+    {
+      "frozen_source": "Athlytica/03_DIGITAL/profile-1000.png",
+      "kind": "social",
+      "output": "social/profile-1000.png",
+      "output_sha256": "197ed37537c461b52271c225bb069af9ff6c18f58a8732dfa8e73a215c9a2082",
+      "source_sha256": "197ed37537c461b52271c225bb069af9ff6c18f58a8732dfa8e73a215c9a2082"
+    },
+    {
+      "frozen_source": "Athlytica/03_DIGITAL/profile-400.png",
+      "kind": "social",
+      "output": "social/profile-400.png",
+      "output_sha256": "1e716280c1297451c49d54b20f5b4345c7eacb597243cbda5e4c78455666ffda",
+      "source_sha256": "1e716280c1297451c49d54b20f5b4345c7eacb597243cbda5e4c78455666ffda"
+    },
+    {
+      "frozen_source": "Athlytica/03_DIGITAL/profile-light-1000.png",
+      "kind": "social",
+      "output": "social/profile-light-1000.png",
+      "output_sha256": "197ed37537c461b52271c225bb069af9ff6c18f58a8732dfa8e73a215c9a2082",
+      "source_sha256": "197ed37537c461b52271c225bb069af9ff6c18f58a8732dfa8e73a215c9a2082"
+    },
+    {
+      "frozen_source": "Athlytica/10_TOKENS/tokens.css",
+      "kind": "tokens",
+      "output": "tokens.css",
+      "output_sha256": "4bfeb80ed3ae3dd3e010b491105693b162724e1b6d99708a5d585a8caf5b986e",
+      "source_sha256": "4bfeb80ed3ae3dd3e010b491105693b162724e1b6d99708a5d585a8caf5b986e"
+    }
+  ]
+}
