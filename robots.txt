@@ -1,0 +1,6 @@
+# athlyticahq.com — the marketing site.
+# The product lives at app.athlyticahq.com and is not indexed from here.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.athlyticahq.com/sitemap.xml

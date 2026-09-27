@@ -1,0 +1,401 @@
+/* =====================================================================
+   ATHLYTICA — stylesheet
+   =====================================================================
+   Every visual value comes from brand/tokens.css, a byte-identical copy of
+   the frozen Athlytica tokens. THERE IS NO PALETTE HERE.
+
+   VISUAL TERRITORY: THE STANDARD. A standards body, not a sports app. Quiet
+   confidence, evidence, precision. The retired system was obsidian glass with
+   neon cyan and green and a decorative gold; none of it is here, and none of
+   it comes back.
+
+   THIS IS NOT THE BIG ICE SYSTEM. Different palette, different typeface,
+   different rhythm, different components. The two frozen systems share zero
+   hex values and zero typefaces by design, and nothing here was reused from
+   that implementation except the engineering method.
+
+   ---------------------------------------------------------------------
+   THE GOLD RULE
+   ---------------------------------------------------------------------
+   --brand-verified is applied ONLY where a record satisfies the published
+   verification condition. Not a heading, not a button, not a hover, not a
+   divider, not a premium tier. It appears exactly once in this file, on
+   .chip--verified, and a scan asserts that. Nothing in Athlytica currently
+   carries that state, so on this site it renders only in the legend that
+   explains what it would mean.
+   ===================================================================== */
+
+/* ---------------- fonts: self-hosted, subset at C0 ---------------- */
+/* Inter + JetBrains Mono, SIL OFL 1.1. brand/fonts/OFL.txt ships alongside.
+   Mono does real work here: a figure set in mono reads as audited, the same
+   figure in a proportional face reads as asserted. Every number that came out
+   of a record is mono. */
+
+@font-face { font-family: "Inter"; src: url("/brand/fonts/inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("/brand/fonts/inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("/brand/fonts/inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("/brand/fonts/inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("/brand/fonts/jetbrains-mono-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("/brand/fonts/jetbrains-mono-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("/brand/fonts/jetbrains-mono-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+
+/* ---------------- scale ---------------- */
+:root {
+    --step-0: 1rem;
+    --step-1: clamp(1.06rem, 1.01rem + 0.24vw, 1.19rem);
+    --step-2: clamp(1.25rem, 1.14rem + 0.53vw, 1.56rem);
+    --step-3: clamp(1.5rem, 1.29rem + 1.05vw, 2.11rem);
+    --step-4: clamp(1.8rem, 1.42rem + 1.9vw, 2.9rem);
+    --step-5: clamp(2.1rem, 1.5rem + 3vw, 3.85rem);
+
+    --sp-3xs: 0.25rem;
+    --sp-2xs: 0.5rem;
+    --sp-xs: 0.75rem;
+    --sp-s: 1rem;
+    --sp-m: 1.5rem;
+    --sp-l: 2.25rem;
+    --sp-xl: 3.5rem;
+    --sp-2xl: 5.5rem;
+
+    --measure: 68ch;
+    --container: 72rem;
+    --nav-h: 4rem;
+    --radius: 3px;
+    --speed: 150ms;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 1rem); -webkit-text-size-adjust: 100%; }
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    line-height: 1.62;
+    color: var(--brand-ink);
+    background: var(--brand-paper);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+img, svg { display: block; max-width: 100%; height: auto; }
+ul, ol { list-style: none; }
+a { color: inherit; }
+
+/* ---------------- type ---------------- */
+
+h1, h2, h3 {
+    font-family: var(--font-body);
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.021em;
+    text-wrap: balance;
+    color: var(--brand-ink);
+}
+h1 { font-size: var(--step-5); letter-spacing: -0.028em; }
+h2 { font-size: var(--step-4); }
+h3 { font-size: var(--step-2); line-height: 1.25; }
+h4 { font-size: var(--step-1); font-weight: 600; line-height: 1.3; color: var(--brand-ink); }
+
+p { max-width: var(--measure); }
+p + p { margin-top: var(--sp-s); }
+h1 + p, h2 + p, h3 + p, h4 + p, h1 + ul, h2 + ul, h3 + ul, h4 + ul { margin-top: var(--sp-s); }
+
+.lede { font-size: var(--step-1); line-height: 1.55; color: var(--brand-ink); }
+.muted { color: var(--brand-muted); }
+.small { font-size: 0.875rem; line-height: 1.55; }
+
+/* Mono is the signature of a recorded value, not a decorative face. */
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+/* Section numbering, carried over from the retired site because it was one of
+   the things it got right: it tells a reader where they are in an argument. */
+.marker {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--brand-muted);
+    display: block;
+    margin-bottom: var(--sp-s);
+}
+.marker::after {
+    content: "";
+    display: block;
+    width: 2.5rem;
+    border-top: 2px solid var(--brand-signal);
+    margin-top: var(--sp-2xs);
+}
+
+/* ---------------- layout ---------------- */
+
+.container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--sp-m); }
+.section { padding-block: var(--sp-2xl); }
+.section--tight { padding-block: var(--sp-xl); }
+.section--surface { background: var(--brand-surface); border-block: 1px solid var(--brand-line); }
+.section--dark { background: var(--ui-dark-bg); color: #E8EAED; }
+.section--dark h1, .section--dark h2, .section--dark h3, .section--dark h4 { color: #FFFFFF; }
+.section--dark .muted { color: #A9B0BA; }
+.section--dark .marker { color: #A9B0BA; }
+
+.head { max-width: 46rem; margin-bottom: var(--sp-l); }
+
+.grid { display: grid; gap: var(--sp-m); }
+.grid--2 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr)); }
+.grid--3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+.rule { border: 0; border-top: 1px solid var(--brand-line); }
+
+/* ---------------- skip link + focus ---------------- */
+
+.skip-link {
+    position: absolute; left: var(--sp-s); top: -4rem; z-index: 100;
+    padding: var(--sp-2xs) var(--sp-s);
+    background: var(--brand-ink); color: #fff; font-weight: 600;
+    transition: top var(--speed) ease;
+}
+.skip-link:focus { top: var(--sp-s); }
+
+/* Element-level selectors, not a bare :focus-visible — that ties with every
+   class rule and loses. Signal blue reads on paper and on the dark band. */
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible {
+    outline: 3px solid var(--brand-signal);
+    outline-offset: 3px;
+    border-radius: var(--radius);
+}
+.section--dark a:focus-visible { outline-color: #7FA0FF; }
+
+/* ---------------- header ---------------- */
+
+.site-header {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--brand-paper);
+    border-bottom: 1px solid var(--brand-line);
+}
+.site-header__inner { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-m); min-height: var(--nav-h); }
+
+/* A1 apex. Below 32px the compact variant is substituted and below ~24px the
+   notch is lost entirely, so the mark is never shown alone at those sizes —
+   this lockup always carries the wordmark. */
+.brand-lockup { display: flex; align-items: center; text-decoration: none; }
+.brand-lockup img { height: 1.9rem; width: auto; }
+
+.nav { display: flex; align-items: center; gap: var(--sp-m); }
+.nav__list { display: flex; align-items: center; gap: var(--sp-m); }
+.nav__link {
+    font-size: 0.925rem; font-weight: 500; text-decoration: none;
+    color: var(--brand-muted); padding-block: var(--sp-2xs);
+    border-bottom: 2px solid transparent;
+}
+.nav__link:hover { color: var(--brand-ink); }
+.nav__link[aria-current="page"] { color: var(--brand-ink); border-bottom-color: var(--brand-signal); }
+.nav__toggle {
+    display: none; background: none; border: 1px solid var(--brand-line);
+    border-radius: var(--radius); padding: var(--sp-2xs) var(--sp-xs);
+    font: inherit; font-weight: 600; color: var(--brand-ink); cursor: pointer; min-height: 44px;
+}
+
+/* ---------------- buttons ---------------- */
+/* NOTE THE ABSENCE. There is no gold button, and there never will be. */
+
+.btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2xs);
+    min-height: 46px; padding: var(--sp-xs) var(--sp-m);
+    font-family: var(--font-body); font-size: 0.95rem; font-weight: 600;
+    text-align: center; text-decoration: none;
+    border: 1px solid transparent; border-radius: var(--radius); cursor: pointer;
+    transition: background var(--speed) ease, color var(--speed) ease, border-color var(--speed) ease;
+}
+.btn--primary { background: var(--brand-signal); color: #fff; border-color: var(--brand-signal); }
+.btn--primary:hover { background: #163CAB; border-color: #163CAB; }
+.btn--secondary { background: transparent; color: var(--brand-ink); border-color: var(--brand-line); }
+.btn--secondary:hover { border-color: var(--brand-ink); }
+.section--dark .btn--secondary { color: #fff; border-color: rgba(255,255,255,0.3); }
+.section--dark .btn--secondary:hover { border-color: #fff; }
+.btn-row { display: flex; flex-wrap: wrap; gap: var(--sp-s); margin-top: var(--sp-l); }
+
+/* ---------------- cards ---------------- */
+
+.card {
+    background: var(--brand-surface);
+    border: 1px solid var(--brand-line);
+    border-radius: var(--radius);
+    padding: var(--sp-m);
+    height: 100%;
+}
+.card h3, .card h4 { margin-bottom: var(--sp-2xs); }
+.card p { color: var(--brand-muted); }
+.section--dark .card { background: var(--ui-dark-surface); border-color: rgba(255,255,255,0.1); }
+.section--dark .card p { color: #A9B0BA; }
+
+/* =====================================================================
+   EVIDENCE STATE CHIPS
+   =====================================================================
+   Six states from the production guidelines. COLOUR NEVER CARRIES STATUS
+   ALONE: every chip is a WORD on a surface with a RULE above it, so it stays
+   legible with the colour channel removed. Desaturate the page and the states
+   still read.
+
+   The rule above the chip is the state's colour; the text is always ink or
+   near-ink so contrast never depends on the state colour.
+   ===================================================================== */
+
+.chip {
+    display: inline-flex; align-items: center; gap: var(--sp-2xs);
+    font-family: var(--font-mono);
+    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--brand-ink);
+    background: var(--brand-surface);
+    border: 1px solid var(--brand-line);
+    border-top-width: 3px;
+    border-radius: 2px;
+    padding: var(--sp-3xs) var(--sp-2xs);
+    white-space: nowrap;
+}
+.chip--recorded  { border-top-color: var(--brand-muted); }
+.chip--attested  { border-top-color: var(--brand-ink); }
+/* THE ONLY USE OF VERIFIED GOLD IN THIS FILE. */
+.chip--verified  { border-top-color: var(--brand-verified); }
+.chip--pending   { border-top-color: var(--state-pending); }
+.chip--disputed  { border-top-color: var(--state-disputed); }
+.chip--sample    { border-top-color: var(--brand-signal); }
+
+.section--dark .chip { background: var(--ui-dark-surface); color: #E8EAED; border-color: rgba(255,255,255,0.14); }
+
+/* A state that is not currently attainable is stated as such rather than
+   being quietly styled as if it were available. */
+.chip[data-unattained="true"] { opacity: 1; }
+.chip-note { display: block; font-size: 0.8rem; color: var(--brand-muted); margin-top: var(--sp-2xs); }
+
+.state-list { display: grid; gap: var(--sp-m); }
+.state-list__item { border-top: 1px solid var(--brand-line); padding-top: var(--sp-s); }
+.section--dark .state-list__item { border-top-color: rgba(255,255,255,0.14); }
+.state-list__item h4 { margin-bottom: var(--sp-3xs); }
+.state-list__item p { font-size: 0.925rem; color: var(--brand-muted); }
+.section--dark .state-list__item p { color: #A9B0BA; }
+
+/* =====================================================================
+   SAMPLE DATA — NON-DISMISSIBLE
+   =====================================================================
+   Signal blue, per the production guidelines. It is a bar across the top of
+   anything representative, not a caption underneath it, and there is no close
+   control and no CSS that can hide it. If example data is on screen, this is
+   on screen.
+   ===================================================================== */
+
+.sample {
+    border: 1px solid var(--brand-signal);
+    border-radius: var(--radius);
+    background: var(--brand-surface);
+    overflow: hidden;
+}
+.sample__banner {
+    background: var(--brand-signal);
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: var(--sp-2xs) var(--sp-s);
+    display: flex; flex-wrap: wrap; gap: var(--sp-2xs) var(--sp-s); justify-content: space-between;
+}
+.sample__body { padding: var(--sp-m); }
+
+/* =====================================================================
+   RECORD PRESENTATION
+   =====================================================================
+   A record, not a dashboard. No gauges, no radials, no sparkline that implies
+   a trend from three points. Fields and their provenance.
+   ===================================================================== */
+
+.record__head { display: flex; flex-wrap: wrap; gap: var(--sp-s); align-items: baseline; justify-content: space-between; margin-bottom: var(--sp-m); }
+.record__athlete { font-weight: 600; font-size: var(--step-1); }
+.record__meta { font-family: var(--font-mono); font-size: 0.78rem; color: var(--brand-muted); }
+
+.fields { display: grid; gap: 0; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); }
+.field { border-top: 1px solid var(--brand-line); padding: var(--sp-s) var(--sp-s) var(--sp-s) 0; }
+.field__label { display: block; font-size: 0.72rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--brand-muted); margin-bottom: var(--sp-3xs); }
+.field__value { font-family: var(--font-mono); font-size: var(--step-2); font-weight: 500; font-variant-numeric: tabular-nums; }
+
+/* =====================================================================
+   NOT RECORDED
+   =====================================================================
+   NEVER 0. NEVER BLANK. NEVER A FAILURE STATE. NEVER "poor".
+   A blank is a blank, and the system says so in words. It is deliberately
+   NOT red, NOT struck through, and NOT dimmed to the point of disappearing —
+   a missing measurement is information, not an error.
+   ===================================================================== */
+
+.field__value--not-recorded {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: var(--brand-muted);
+    border-bottom: 2px dotted var(--brand-muted);
+    padding-bottom: 1px;
+}
+
+/* ---------------- provenance ---------------- */
+
+.provenance { font-family: var(--font-mono); font-size: 0.78rem; display: grid; gap: var(--sp-2xs); }
+.provenance__row { display: flex; flex-wrap: wrap; gap: var(--sp-2xs) var(--sp-s); border-top: 1px solid var(--brand-line); padding-top: var(--sp-2xs); }
+.provenance__key { color: var(--brand-muted); min-width: 9rem; }
+.provenance__val { color: var(--brand-ink); }
+
+/* ---------------- flow / steps ---------------- */
+
+.steps { display: grid; gap: 0; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); }
+.step { border-top: 2px solid var(--brand-signal); padding: var(--sp-s) var(--sp-m) var(--sp-m) 0; }
+.step__n { font-family: var(--font-mono); font-size: 0.72rem; color: var(--brand-muted); display: block; margin-bottom: var(--sp-3xs); }
+.step h4 { margin-bottom: var(--sp-3xs); }
+.step p { font-size: 0.9rem; color: var(--brand-muted); }
+
+/* ---------------- chain: data -> decision ---------------- */
+
+.chain { display: flex; flex-wrap: wrap; gap: var(--sp-2xs); align-items: center; font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.chain__node { border: 1px solid var(--brand-line); border-radius: 2px; padding: var(--sp-3xs) var(--sp-2xs); background: var(--brand-surface); }
+.chain__arrow { color: var(--brand-muted); }
+.section--dark .chain__node { background: var(--ui-dark-surface); border-color: rgba(255,255,255,0.14); }
+
+/* ---------------- footer ---------------- */
+
+.site-footer { background: var(--brand-surface); border-top: 1px solid var(--brand-line); padding-block: var(--sp-xl) var(--sp-m); }
+.site-footer h4 { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand-muted); margin-bottom: var(--sp-s); font-weight: 600; }
+.site-footer a { color: var(--brand-ink); text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.site-footer li { margin-bottom: var(--sp-2xs); font-size: 0.925rem; }
+.footer__grid { display: grid; gap: var(--sp-l); grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); }
+.footer__legal { margin-top: var(--sp-xl); padding-top: var(--sp-m); border-top: 1px solid var(--brand-line); font-size: 0.8rem; color: var(--brand-muted); display: flex; flex-wrap: wrap; gap: var(--sp-2xs) var(--sp-m); justify-content: space-between; }
+
+/* ---------------- responsive ---------------- */
+
+@media (max-width: 56rem) {
+    .nav__toggle { display: inline-flex; align-items: center; }
+    .nav__list {
+        display: none; position: absolute; left: 0; right: 0; top: var(--nav-h);
+        flex-direction: column; align-items: stretch; gap: 0;
+        background: var(--brand-paper); border-bottom: 1px solid var(--brand-line);
+        padding: var(--sp-2xs) var(--sp-m) var(--sp-m);
+    }
+    .nav__list.open { display: flex; }
+    .nav__list li { border-bottom: 1px solid var(--brand-line); }
+    .nav__link { display: block; padding-block: var(--sp-s); border-bottom: 0; }
+    .nav__cta { display: none; }
+    .nav__list .nav__cta { display: inline-flex; margin-top: var(--sp-m); }
+    .site-header__inner { position: relative; }
+    .step { padding-right: 0; }
+}
+
+@media (max-width: 30rem) {
+    .btn, .btn-row .btn { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
