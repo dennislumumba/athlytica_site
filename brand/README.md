@@ -34,7 +34,9 @@ one colour in this system that carries a factual claim.
   good, that is a defect. The pipeline fails the build if `#8C6D1F` is bound to
   any token other than `--brand-verified`.
 
-The retired `#D4AF37` is a different colour and is prohibited portfolio-wide.
+The retired Big Ice metallic gold is a different colour and is prohibited
+portfolio-wide. It is not written literally here, for the same reason the scan
+exists at all.
 
 ## States this brand must keep distinct
 
