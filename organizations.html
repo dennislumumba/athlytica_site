@@ -41,16 +41,17 @@
 <header class="site-header">
   <div class="container site-header__inner">
     <a class="brand-lockup" href="/" aria-label="Athlytica — home">
-      <img src="/brand/logo/lockup-horizontal.svg" alt="Athlytica" width="556" height="130">
+      <img src="/brand/logo/lockup-compact.svg" alt="Athlytica" width="556" height="130">
     </a>
     <nav class="nav" aria-label="Primary">
       <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navList">Menu</button>
       <ul class="nav__list" id="navList">
-        <li><a class="nav__link" href="/">Overview</a></li>
-        <li><a class="nav__link" href="/organizations" aria-current="page">Organizations</a></li>
-        <li><a class="nav__link" href="/athletes">Athletes & guardians</a></li>
-        <li><a class="nav__link" href="/trust">Trust & evidence</a></li>
-        <li><a class="btn btn--primary nav__cta" href="https://app.athlyticahq.com/pilot" data-track="nav_pilot">Start a 30-day pilot</a></li>
+        <li><a class="nav__link" href="/organizations" aria-current="page">For Academies</a></li>
+        <li><a class="nav__link" href="/organizations#coaches">For Coaches</a></li>
+        <li><a class="nav__link" href="/athletes">For Families</a></li>
+        <li><a class="nav__link" href="/trust">Trust</a></li>
+        <li><a class="nav__link" href="https://app.athlyticahq.com/login" data-track="nav_signin">Sign in</a></li>
+        <li><a class="btn btn--primary nav__cta" href="/demo" data-track="nav_demo">See a 10-minute demo</a></li>
       </ul>
     </nav>
   </div>
@@ -58,16 +59,17 @@
 
 <main id="main">
 
-  <section class="section">
+  <section class="section" id="academy">
     <div class="container">
-      <span class="marker">Organizations</span>
+      <span class="marker">For academies</span>
       <h1>Everything the coaching<br>already does — kept.</h1>
       <p class="lede" style="margin-top:var(--sp-m);max-width:48ch;">
         Enrolment, registers, assessment and reporting to families, in one place, with the evidence
         kept beside each record instead of in a notebook.
       </p>
       <div class="btn-row">
-        <a class="btn btn--primary" href="https://app.athlyticahq.com/pilot" data-track="orgs_hero_pilot">Start a 30-day pilot</a>
+        <a class="btn btn--primary" href="/demo" data-track="orgs_hero_demo">See a 10-minute demo</a>
+        <a class="btn btn--secondary" href="https://app.athlyticahq.com/pilot?type=academy" data-track="orgs_hero_pilot">Discuss an academy pilot</a>
       </div>
     </div>
   </section>
@@ -108,10 +110,31 @@
     </div>
   </section>
 
+  <section class="section" id="coaches">
+    <div class="container">
+      <div class="head">
+        <span class="marker">For coaches</span>
+        <h2>Your athletes, your sessions, one continuous record.</h2>
+        <p class="muted">Whether you coach inside an academy or run your own practice, the record is built as you work and stays with the athlete when you move on.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card"><h4>Assigned athletes</h4><p>The athletes you coach, in one place.</p></div>
+        <div class="card"><h4>Session history</h4><p>Every session and attendance mark, in order.</p></div>
+        <div class="card"><h4>Assessments</h4><p>Measured against a versioned protocol, attributed to you.</p></div>
+        <div class="card"><h4>Development Reviews</h4><p>Written from the recorded evidence, published when you choose.</p></div>
+        <div class="card"><h4>A continuous record</h4><p>The history is not lost when a season or a coaching relationship ends.</p></div>
+        <div class="card"><h4>Independent practice</h4><p>No academy behind you? Declare a practice and record under it.</p></div>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--secondary" href="https://app.athlyticahq.com/pilot?type=coach" data-track="orgs_coach_trial">Start or discuss a 30-day coach trial</a>
+      </div>
+    </div>
+  </section>
+
   <section class="section section--surface">
     <div class="container">
       <div class="head">
-        <span class="marker">03 — What a pilot is</span>
+        <span class="marker">03 — Pilot &amp; trial</span>
         <h2>Thirty days, because thirty days is what it takes to mean anything.</h2>
         <p class="muted">A seven-day pilot can demonstrate the session loop but cannot produce a
         single comparable measure. Thirty days spans a real training block.</p>
@@ -122,7 +145,7 @@
         <div class="card"><h4>Record the work</h4><p>Attendance, assessment and notes, attributed to the coach who made them.</p></div>
         <div class="card"><h4>Invite families</h4><p>Where guardian access applies, and subject to recorded authority.</p></div>
         <div class="card"><h4>See the record build</h4><p>At the end you have a register you can read, or you have learned the model does not fit.</p></div>
-        <div class="card"><h4>Free for 30 days</h4><p>No card and no account are created. Qualification happens in a conversation first.</p></div>
+        <div class="card"><h4>A conversation first</h4><p>No card and no account are created by enquiring. Setup and data onboarding are confirmed with your organisation.</p></div>
       </div>
       <p class="small muted" style="margin-top:var(--sp-l);max-width:62ch;">
         A pilot never promises scouting placement, scholarships or verified status. Pilot
@@ -136,17 +159,13 @@
     <div class="container">
       <div class="head">
         <span class="marker">Next step</span>
-        <h2>Talk about a pilot.</h2>
+        <h2>See how it would work for your organisation.</h2>
         <p class="muted">A short qualification conversation first — a pilot that starts without knowing who you coach is an onboarding that fails in week two.</p>
       </div>
       <div class="btn-row" style="margin-top:0;">
-        <a class="btn btn--primary" href="https://app.athlyticahq.com/pilot" data-track="orgs_cta">Start a 30-day pilot</a>
-        <a class="btn btn--secondary" href="/trust" data-track="orgs_cta_trust">How evidence is handled</a>
-      </div>
-      <p class="small muted" style="margin-top:var(--sp-m);">
-        Free for 30 days. No card and no account are created — qualification happens in a conversation first.
-        Pilot availability depends on product, privacy and protocol readiness.
-      </p>
+        <a class="btn btn--primary" href="/demo" data-track="orgs_cta_demo">See a 10-minute demo</a>
+        <a class="btn btn--secondary" href="https://app.athlyticahq.com/pilot?type=academy" data-track="orgs_cta">Discuss an academy pilot</a>
+              </div>
     </div>
   </section>
 
@@ -157,32 +176,33 @@
     <div class="footer__grid">
       <div>
         <a class="brand-lockup" href="/" aria-label="Athlytica — home" style="margin-bottom:var(--sp-s);">
-          <img src="/brand/logo/lockup-horizontal.svg" alt="Athlytica" width="556" height="130">
+          <img src="/brand/logo/lockup-compact.svg" alt="Athlytica" width="556" height="130">
         </a>
         <p class="small muted">Athlete record infrastructure · Nairobi, Kenya</p>
       </div>
       <div>
         <h4>Site</h4>
         <ul>
-          <li><a href="/">Overview</a></li>
-          <li><a href="/organizations">Organizations</a></li>
-          <li><a href="/athletes">Athletes &amp; guardians</a></li>
+          <li><a href="/organizations">For Academies</a></li>
+          <li><a href="/organizations#coaches">For Coaches</a></li>
+          <li><a href="/athletes">For Families</a></li>
           <li><a href="/trust">Trust &amp; evidence</a></li>
         </ul>
       </div>
       <div>
         <h4>Start</h4>
         <ul>
-          <li><a href="https://app.athlyticahq.com/pilot" data-track="footer_pilot">Start a 30-day pilot</a></li>
-          <li><a href="mailto:info@athlyticahq.com">info@athlyticahq.com</a></li>
-          <li><a href="https://app.athlyticahq.com/privacy" data-track="footer_privacy">Privacy &amp; data handling</a></li>
+          <li><a href="/demo" data-track="footer_demo">See a 10-minute demo</a></li>
+          <li><a href="mailto:info@athlyticahq.com" data-track="footer_contact">info@athlyticahq.com</a></li>
+          <li><a href="https://app.athlyticahq.com/login" data-track="footer_signin">Sign in</a></li>
         </ul>
       </div>
       <div>
-        <h4>Current state</h4>
+        <h4>Legal</h4>
         <ul>
+          <li><a href="https://app.athlyticahq.com/privacy" data-track="footer_privacy">Privacy &amp; data handling</a></li>
+          <li><a href="https://app.athlyticahq.com/terms" data-track="footer_terms">Terms</a></li>
           <li class="muted">Controlled pilots only</li>
-          <li class="muted">Readiness gates apply</li>
           <li class="muted">No independent verification claimed</li>
         </ul>
       </div>

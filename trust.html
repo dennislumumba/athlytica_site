@@ -41,16 +41,17 @@
 <header class="site-header">
   <div class="container site-header__inner">
     <a class="brand-lockup" href="/" aria-label="Athlytica — home">
-      <img src="/brand/logo/lockup-horizontal.svg" alt="Athlytica" width="556" height="130">
+      <img src="/brand/logo/lockup-compact.svg" alt="Athlytica" width="556" height="130">
     </a>
     <nav class="nav" aria-label="Primary">
       <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navList">Menu</button>
       <ul class="nav__list" id="navList">
-        <li><a class="nav__link" href="/">Overview</a></li>
-        <li><a class="nav__link" href="/organizations">Organizations</a></li>
-        <li><a class="nav__link" href="/athletes">Athletes & guardians</a></li>
-        <li><a class="nav__link" href="/trust" aria-current="page">Trust & evidence</a></li>
-        <li><a class="btn btn--primary nav__cta" href="https://app.athlyticahq.com/pilot" data-track="nav_pilot">Start a 30-day pilot</a></li>
+        <li><a class="nav__link" href="/organizations">For Academies</a></li>
+        <li><a class="nav__link" href="/organizations#coaches">For Coaches</a></li>
+        <li><a class="nav__link" href="/athletes">For Families</a></li>
+        <li><a class="nav__link" href="/trust" aria-current="page">Trust</a></li>
+        <li><a class="nav__link" href="https://app.athlyticahq.com/login" data-track="nav_signin">Sign in</a></li>
+        <li><a class="btn btn--primary nav__cta" href="/demo" data-track="nav_demo">See a 10-minute demo</a></li>
       </ul>
     </nav>
   </div>
@@ -186,6 +187,16 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="container">
+      <div class="head">
+        <span class="marker">Development Reviews</span>
+        <h2>Coach-authored. Evidence-linked. Not independently verified.</h2>
+        <p class="muted">A Development Review is a coach's structured judgement, written from recorded evidence. It is coach-attested: a named coach stands behind it, and nobody else has checked it. A family sees a review only when the coach publishes it.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="section section--dark">
     <div class="container">
       <div class="head">
@@ -239,7 +250,7 @@
       useful than an abstraction — <strong>not as evidence of broad adoption</strong>, which would be
       a different claim and one Athlytica cannot currently make.</p>
       <p class="small muted" style="margin-top:var(--sp-m);">
-        Big Ice develops athletes. Athlytica records, structures and verifies evidence. NRHL organises
+        Big Ice develops athletes. Athlytica records and structures evidence. NRHL organises
         competition. Three separate organisations with three separate brands.
       </p>
       <div class="btn-row">
@@ -253,16 +264,12 @@
       <div class="head">
         <span class="marker">Next step</span>
         <h2>Read the record before you rely on it.</h2>
-        <p class="muted">A pilot is the honest way to evaluate this: your athletes, your sessions, and a register you can inspect at the end.</p>
+        <p class="muted">A demo shows how each entry carries its state and its origin, using sample data.</p>
       </div>
       <div class="btn-row" style="margin-top:0;">
-        <a class="btn btn--primary" href="https://app.athlyticahq.com/pilot" data-track="trust_cta">Start a 30-day pilot</a>
-        <a class="btn btn--secondary" href="/trust" data-track="trust_cta_trust">How evidence is handled</a>
+        <a class="btn btn--primary" href="/demo" data-track="trust_cta">See a 10-minute demo</a>
+        <a class="btn btn--secondary" href="mailto:info@athlyticahq.com" data-track="trust_cta_contact">Contact Athlytica</a>
       </div>
-      <p class="small muted" style="margin-top:var(--sp-m);">
-        Free for 30 days. No card and no account are created — qualification happens in a conversation first.
-        Pilot availability depends on product, privacy and protocol readiness.
-      </p>
     </div>
   </section>
 
@@ -273,32 +280,33 @@
     <div class="footer__grid">
       <div>
         <a class="brand-lockup" href="/" aria-label="Athlytica — home" style="margin-bottom:var(--sp-s);">
-          <img src="/brand/logo/lockup-horizontal.svg" alt="Athlytica" width="556" height="130">
+          <img src="/brand/logo/lockup-compact.svg" alt="Athlytica" width="556" height="130">
         </a>
         <p class="small muted">Athlete record infrastructure · Nairobi, Kenya</p>
       </div>
       <div>
         <h4>Site</h4>
         <ul>
-          <li><a href="/">Overview</a></li>
-          <li><a href="/organizations">Organizations</a></li>
-          <li><a href="/athletes">Athletes &amp; guardians</a></li>
+          <li><a href="/organizations">For Academies</a></li>
+          <li><a href="/organizations#coaches">For Coaches</a></li>
+          <li><a href="/athletes">For Families</a></li>
           <li><a href="/trust">Trust &amp; evidence</a></li>
         </ul>
       </div>
       <div>
         <h4>Start</h4>
         <ul>
-          <li><a href="https://app.athlyticahq.com/pilot" data-track="footer_pilot">Start a 30-day pilot</a></li>
-          <li><a href="mailto:info@athlyticahq.com">info@athlyticahq.com</a></li>
-          <li><a href="https://app.athlyticahq.com/privacy" data-track="footer_privacy">Privacy &amp; data handling</a></li>
+          <li><a href="/demo" data-track="footer_demo">See a 10-minute demo</a></li>
+          <li><a href="mailto:info@athlyticahq.com" data-track="footer_contact">info@athlyticahq.com</a></li>
+          <li><a href="https://app.athlyticahq.com/login" data-track="footer_signin">Sign in</a></li>
         </ul>
       </div>
       <div>
-        <h4>Current state</h4>
+        <h4>Legal</h4>
         <ul>
+          <li><a href="https://app.athlyticahq.com/privacy" data-track="footer_privacy">Privacy &amp; data handling</a></li>
+          <li><a href="https://app.athlyticahq.com/terms" data-track="footer_terms">Terms</a></li>
           <li class="muted">Controlled pilots only</li>
-          <li class="muted">Readiness gates apply</li>
           <li class="muted">No independent verification claimed</li>
         </ul>
       </div>

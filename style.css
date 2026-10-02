@@ -191,6 +191,7 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible,
     color: var(--brand-muted); padding-block: var(--sp-2xs);
     border-bottom: 2px solid transparent;
 }
+.nav__link, .nav__cta { white-space: nowrap; }
 .nav__link:hover { color: var(--brand-ink); }
 .nav__link[aria-current="page"] { color: var(--brand-ink); border-bottom-color: var(--brand-signal); }
 .nav__toggle {
@@ -341,6 +342,7 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible,
 /* ---------------- provenance ---------------- */
 
 .provenance { font-family: var(--font-mono); font-size: 0.78rem; display: grid; gap: var(--sp-2xs); }
+.provenance--prose { font-family: var(--font-body); font-size: 0.9rem; }
 .provenance__row { display: flex; flex-wrap: wrap; gap: var(--sp-2xs) var(--sp-s); border-top: 1px solid var(--brand-line); padding-top: var(--sp-2xs); }
 .provenance__key { color: var(--brand-muted); min-width: 9rem; }
 .provenance__val { color: var(--brand-ink); }
@@ -360,6 +362,12 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible,
 .chain__arrow { color: var(--brand-muted); }
 .section--dark .chain__node { background: var(--ui-dark-surface); border-color: rgba(255,255,255,0.14); }
 
+/* Short outcome lists inside cards and beside the sample review. */
+.list { list-style: none; padding: 0; margin-top: var(--sp-s); display: grid; gap: var(--sp-2xs); }
+.list li { padding-left: var(--sp-s); position: relative; color: var(--brand-muted); }
+.list li::before { content: ""; position: absolute; left: 0; top: 0.7em; width: 0.35rem; height: 0.35rem; background: var(--brand-signal); border-radius: 50%; }
+.list strong { color: var(--brand-ink); }
+
 /* ---------------- footer ---------------- */
 
 .site-footer { background: var(--brand-surface); border-top: 1px solid var(--brand-line); padding-block: var(--sp-xl) var(--sp-m); }
@@ -372,7 +380,7 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible,
 
 /* ---------------- responsive ---------------- */
 
-@media (max-width: 56rem) {
+@media (max-width: 64rem) {
     .nav__toggle { display: inline-flex; align-items: center; }
     .nav__list {
         display: none; position: absolute; left: 0; right: 0; top: var(--nav-h);

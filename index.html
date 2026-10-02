@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Athlytica — the athlete record built to last</title>
-  <meta name="description" content="Athlytica is athlete record infrastructure. It keeps recorded and coach-attested athlete entries with their source and context. Independent verification is a separate state and is not currently claimed.">
+  <meta name="description" content="Athlytica is athlete record infrastructure. It keeps an athlete's sessions, assessments and coach-authored Development Reviews connected across coaches and organisations, with provenance and controlled family access. Independent verification is not currently claimed.">
   <link rel="canonical" href="https://www.athlyticahq.com/">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Athlytica">
   <meta property="og:title" content="Athlytica — the athlete record built to last">
-  <meta property="og:description" content="Athlytica is athlete record infrastructure. It keeps recorded and coach-attested athlete entries with their source and context. Independent verification is a separate state and is not currently claimed.">
+  <meta property="og:description" content="One athlete. One continuous record. Sessions, assessments and Development Reviews kept connected across coaches and organisations, with provenance and controlled family access.">
   <meta property="og:url" content="https://www.athlyticahq.com/">
   <meta property="og:image" content="https://www.athlyticahq.com/brand/social/og-default-1200x630.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Athlytica — the athlete record built to last">
-  <meta name="twitter:description" content="Athlytica is athlete record infrastructure. It keeps recorded and coach-attested athlete entries with their source and context. Independent verification is a separate state and is not currently claimed.">
+  <meta name="twitter:description" content="One athlete. One continuous record. Sessions, assessments and Development Reviews kept connected across coaches and organisations, with provenance and controlled family access.">
   <meta name="twitter:image" content="https://www.athlyticahq.com/brand/social/og-default-1200x630.png">
 
   <link rel="icon" type="image/png" sizes="32x32" href="/brand/icons/favicon-32.png">
@@ -41,16 +41,17 @@
 <header class="site-header">
   <div class="container site-header__inner">
     <a class="brand-lockup" href="/" aria-label="Athlytica — home">
-      <img src="/brand/logo/lockup-horizontal.svg" alt="Athlytica" width="556" height="130">
+      <img src="/brand/logo/lockup-compact.svg" alt="Athlytica" width="556" height="130">
     </a>
     <nav class="nav" aria-label="Primary">
       <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navList">Menu</button>
       <ul class="nav__list" id="navList">
-        <li><a class="nav__link" href="/" aria-current="page">Overview</a></li>
-        <li><a class="nav__link" href="/organizations">Organizations</a></li>
-        <li><a class="nav__link" href="/athletes">Athletes & guardians</a></li>
-        <li><a class="nav__link" href="/trust">Trust & evidence</a></li>
-        <li><a class="btn btn--primary nav__cta" href="https://app.athlyticahq.com/pilot" data-track="nav_pilot">Start a 30-day pilot</a></li>
+        <li><a class="nav__link" href="/organizations">For Academies</a></li>
+        <li><a class="nav__link" href="/organizations#coaches">For Coaches</a></li>
+        <li><a class="nav__link" href="/athletes">For Families</a></li>
+        <li><a class="nav__link" href="/trust">Trust</a></li>
+        <li><a class="nav__link" href="https://app.athlyticahq.com/login" data-track="nav_signin">Sign in</a></li>
+        <li><a class="btn btn--primary nav__cta" href="/demo" data-track="nav_demo">See a 10-minute demo</a></li>
       </ul>
     </nav>
   </div>
@@ -58,127 +59,136 @@
 
 <main id="main">
 
+  <!-- 1 — HERO ----------------------------------------------------------->
   <section class="section">
     <div class="container">
       <span class="marker">Athlete record infrastructure · Nairobi</span>
-      <h1>The athlete record<br>built to last.</h1>
-      <p class="lede" style="margin-top:var(--sp-m);max-width:46ch;">
-        Athlytica keeps recorded and coach-attested athlete entries with their source and context.
-        Independent verification is a separate state and is not currently claimed.
+      <h1>One athlete.<br>One continuous record.</h1>
+      <p class="lede" style="margin-top:var(--sp-m);max-width:48ch;">
+        Keep an athlete's development history connected across sessions, coaches and organisations —
+        with evidence, provenance and controlled family access.
       </p>
-
-      <div class="grid grid--2" style="margin-top:var(--sp-xl);align-items:start;">
-        <div>
-          <p class="marker">What it is</p>
-          <p>Record infrastructure for athlete development. Not a dashboard, not a scouting
-          service, and not a league table — the thing underneath those, which is a register of
-          what an athlete actually did, with the evidence kept beside it.</p>
-        </div>
-        <div>
-          <p class="marker">Who uses it now</p>
-          <p>Academies and independent coaches running controlled pilots in Nairobi. They are the
-          operational users. <strong>The athlete is the subject of the record</strong>, and the
-          long-term owner of their own sporting history.</p>
-        </div>
-        <div>
-          <p class="marker">The problem it solves</p>
-          <p>Coaches change, programmes end, families move. Each of those is normal, and each
-          currently erases years of development because the record lived in a notebook, a phone,
-          or a spreadsheet nobody can find.</p>
-        </div>
-        <div>
-          <p class="marker">Why the records can be trusted</p>
-          <p>Because every entry carries who recorded it, when, under which organisation and
-          against which protocol — and because the state of each entry is shown rather than
-          flattened into one word. <a href="/trust">How evidence is handled</a>.</p>
-        </div>
-      </div>
-
       <div class="btn-row">
-        <a class="btn btn--primary" href="https://app.athlyticahq.com/pilot" data-track="hero_pilot">Start a 30-day pilot</a>
-        <a class="btn btn--secondary" href="#record" data-track="hero_record">See a record</a>
+        <a class="btn btn--primary" href="/demo" data-track="hero_demo">See a 10-minute demo</a>
+        <a class="btn btn--secondary" href="#how" data-track="hero_how">How it works</a>
+        <a class="btn btn--secondary" href="/trust" data-track="hero_trust">Trust &amp; provenance</a>
       </div>
+      <p class="small muted" style="margin-top:var(--sp-m);max-width:60ch;">
+        For academies, independent coaches and the families they report to. Run in controlled
+        pilots in Nairobi.
+      </p>
     </div>
   </section>
 
+  <!-- 2 — PROBLEM -------------------------------------------------------->
   <section class="section section--surface">
     <div class="container">
       <div class="head">
-        <span class="marker">01 — The system</span>
-        <h2>From a measurement to a decision, without losing the origin.</h2>
-        <p class="muted">Each step depends on the one before it. Skip a step and everything downstream
-        is an assertion rather than a finding.</p>
+        <span class="marker">The problem</span>
+        <h2>The record is scattered, so it leaves when people do.</h2>
+        <p class="muted">Coaches change, programmes end, families move. Each is normal, and each
+        erases years of development when the history lives in six places.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card"><h4>WhatsApp</h4><p>Session notes and results buried in a group chat.</p></div>
+        <div class="card"><h4>Paper</h4><p>A register in a bag, a notebook that stays with one coach.</p></div>
+        <div class="card"><h4>Spreadsheets</h4><p>One per coach, one per season, none that agree.</p></div>
+        <div class="card"><h4>Coach turnover</h4><p>What a coach knew is gone the day they move on.</p></div>
+        <div class="card"><h4>Athlete movement</h4><p>A new club or school starts again from nothing.</p></div>
+        <div class="card"><h4>Lost history</h4><p>In five years nobody can say where a number came from.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 — HOW IT WORKS --------------------------------------------------->
+  <section class="section" id="how">
+    <div class="container">
+      <div class="head">
+        <span class="marker">How Athlytica works</span>
+        <h2>Record it once. Carry it forward.</h2>
       </div>
       <div class="chain" style="margin-bottom:var(--sp-l);">
-        <span class="chain__node">Data</span><span class="chain__arrow">→</span>
-        <span class="chain__node">Evidence</span><span class="chain__arrow">→</span>
-        <span class="chain__node">Verification</span><span class="chain__arrow">→</span>
-        <span class="chain__node">Intelligence</span><span class="chain__arrow">→</span>
-        <span class="chain__node">Decision</span>
+        <span class="chain__node">Record</span><span class="chain__arrow">→</span>
+        <span class="chain__node">Organise</span><span class="chain__arrow">→</span>
+        <span class="chain__node">Review</span><span class="chain__arrow">→</span>
+        <span class="chain__node">Publish</span><span class="chain__arrow">→</span>
+        <span class="chain__node">Carry history forward</span>
       </div>
       <div class="grid grid--5">
-        <div class="card"><h4>Data</h4><p>A measurement or observation is captured during a session, against a versioned protocol where one applies.</p></div>
-        <div class="card"><h4>Evidence</h4><p>It is kept with its source, session, time and author, so it can be checked later rather than merely remembered.</p></div>
-        <div class="card"><h4>Verification</h4><p>A separate state, reached only when someone other than the recorder confirms it. <strong>Not currently claimed.</strong></p></div>
-        <div class="card"><h4>Intelligence</h4><p>What the accumulated record supports — always attached to its context and its limitations, never a single number about a child.</p></div>
-        <div class="card"><h4>Decision</h4><p>A coach, an academy or a family deciding what to do next, able to see what the decision rests on.</p></div>
+        <div class="card"><h4>Record</h4><p>Sessions and attendance, captured at the time by a named coach.</p></div>
+        <div class="card"><h4>Organise</h4><p>Assessments against a versioned protocol, kept with the athlete under their organisation.</p></div>
+        <div class="card"><h4>Review</h4><p>The coach writes a Development Review from the recorded evidence.</p></div>
+        <div class="card"><h4>Publish</h4><p>A review reaches the family only when the coach chooses to publish it.</p></div>
+        <div class="card"><h4>Carry forward</h4><p>The history stays with the athlete. A new organisation still needs its own access.</p></div>
       </div>
+      <p class="small muted" style="margin-top:var(--sp-m);max-width:62ch;">
+        Continuity is not permission: keeping a record connected does not give anyone access to it.
+      </p>
     </div>
   </section>
 
-  <section class="section">
+  <!-- 4 — ROLE OUTCOMES -------------------------------------------------->
+  <section class="section section--surface">
     <div class="container">
       <div class="head">
-        <span class="marker">02 — Evidence states</span>
-        <h2>Recorded, coach-attested and independently verified are different things.</h2>
-        <p class="muted">Collapsing them into one word is how a record stops being worth reading.
-        Athlytica shows the state on each entry, and the state is a word, not a colour.</p>
+        <span class="marker">Who it is for</span>
+        <h2>Academies, coaches and the families they report to.</h2>
       </div>
-
-        <div class="state-list grid grid--3">
-          <div class="state-list__item">
-            <span class="chip chip--recorded">Recorded</span>
-            <h4 style="margin-top:var(--sp-2xs);">A measurement exists</h4>
-            <p>Captured against a protocol, with its source, session, time and author. Everything in the system today is at least this.</p>
-          </div>
-          <div class="state-list__item">
-            <span class="chip chip--attested">Coach-attested</span>
-            <h4 style="margin-top:var(--sp-2xs);">A named coach stands behind it</h4>
-            <p>An identified coach, affiliated to a named organisation. Strong — and not the same thing as independent confirmation.</p>
-          </div>
-          <div class="state-list__item">
-            <span class="chip chip--verified">Independently verified</span>
-            <h4 style="margin-top:var(--sp-2xs);">Checked by someone else</h4>
-            <p><strong>Nothing in Athlytica carries this state yet</strong>, and the product will not pretend otherwise. When it does, the method will be published.</p>
-          </div>
-          <div class="state-list__item">
-            <span class="chip chip--pending">Pending</span>
-            <h4 style="margin-top:var(--sp-2xs);">Submitted, not yet checked</h4>
-            <p>The value is shown, not hidden. A reader can see what was claimed while it is still being checked.</p>
-          </div>
-          <div class="state-list__item">
-            <span class="chip chip--disputed">Disputed</span>
-            <h4 style="margin-top:var(--sp-2xs);">Challenged, and still shown</h4>
-            <p>The value stands and is displayed with the challenge beside it. A system that hides disputed numbers can be pressured into hiding inconvenient ones.</p>
-          </div>
-          <div class="state-list__item">
-            <span class="chip chip--sample">Sample</span>
-            <h4 style="margin-top:var(--sp-2xs);">Not a real record</h4>
-            <p>Example data used to explain the system. Always labelled, never dismissible.</p>
-          </div>
+      <div class="grid grid--3">
+        <div class="card">
+          <h3>Academy</h3>
+          <ul class="list">
+            <li>See what coaches are recording</li>
+            <li>Keep athlete history through coach changes</li>
+            <li>Maintain continuity at organisation level</li>
+            <li>Control what families can see</li>
+          </ul>
+          <p style="margin-top:var(--sp-m);"><a href="/organizations" data-track="home_academy"><strong>See the academy workflow →</strong></a></p>
         </div>
-
+        <div class="card">
+          <h3>Coach</h3>
+          <ul class="list">
+            <li>Your assigned athletes in one place</li>
+            <li>Session history and attendance</li>
+            <li>Assessments against a protocol</li>
+            <li>Development Reviews you author</li>
+            <li>A continuous record, not a notebook</li>
+          </ul>
+          <p style="margin-top:var(--sp-m);"><a href="/organizations#coaches" data-track="home_coach"><strong>See the coach workflow →</strong></a></p>
+        </div>
+        <div class="card">
+          <h3>Family</h3>
+          <p>Where the organisation has invited them, a parent or guardian can see authorised, published information:</p>
+          <ul class="list">
+            <li>Attendance and session history</li>
+            <li>Published Development Reviews</li>
+            <li>Permitted athlete record information</li>
+          </ul>
+          <p style="margin-top:var(--sp-m);"><a href="/athletes" data-track="home_family"><strong>What families can see →</strong></a></p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section section--surface" id="record">
+  <!-- 5 — DEVELOPMENT REVIEW -------------------------------------------->
+  <section class="section" id="development-review">
     <div class="container">
-      <div class="head">
-        <span class="marker">03 — The record</span>
-        <h2>One record, and everything it carries.</h2>
-        <p class="muted">Not a report card and not a PDF. A living record with provenance attached, so
-        that in five years somebody can still tell where each number came from.</p>
-      </div>
+      <div class="grid grid--2" style="align-items:start;gap:var(--sp-xl);">
+        <div>
+          <span class="marker">The Development Review</span>
+          <h2>A coach's judgement, written down with its evidence.</h2>
+          <p class="lede" style="margin-top:var(--sp-s);">
+            Coach-authored.<br>Evidence-linked.<br>Not independently verified.
+          </p>
+          <ul class="list" style="margin-top:var(--sp-m);">
+            <li><strong>Coach-authored</strong> — written by an identified coach, under their organisation.</li>
+            <li><strong>Structured</strong> — a summary, strengths, current focus and development priorities.</li>
+            <li><strong>Based on recorded evidence</strong> — sessions, attendance and assessments sit beside it.</li>
+            <li><strong>Intentionally published</strong> — a family sees a review only when the coach publishes it.</li>
+            <li><strong>Under controlled permissions</strong> — not every note or assessment is shared.</li>
+          </ul>
+          <p class="small muted" style="margin-top:var(--sp-m);">A Development Review is a coach's attestation. It is not independent verification.</p>
+        </div>
 
         <div class="sample">
           <p class="sample__banner">
@@ -188,123 +198,155 @@
           <div class="sample__body">
             <div class="record__head">
               <div>
-                <span class="record__athlete">Sample Athlete</span>
-                <span class="record__meta">Inline hockey · one discipline, never blended</span>
+                <span class="record__athlete">Development Review</span>
+                <span class="record__meta">Sample Athlete · Inline hockey</span>
               </div>
               <span class="chip chip--attested">Coach-attested</span>
             </div>
-
-            <div class="fields">
-              <div class="field">
-                <span class="field__label">Sessions recorded</span>
-                <span class="field__value mono">12</span>
-              </div>
-              <div class="field">
-                <span class="field__label">Attendance</span>
-                <span class="field__value mono">11 / 12</span>
-              </div>
-              <div class="field">
-                <span class="field__label">30m sprint</span>
-                <span class="field__value mono">7.2s</span>
-              </div>
-              <div class="field">
-                <span class="field__label">Edge control</span>
-                <span class="field__value mono">2 / 4</span>
-              </div>
-              <div class="field">
-                <!-- NOT RECORDED: never 0, never blank, never a failure. -->
-                <span class="field__label">Standing jump</span>
-                <span class="field__value--not-recorded">Not recorded</span>
-              </div>
-              <div class="field">
-                <span class="field__label">Protocol</span>
-                <span class="field__value mono" style="font-size:0.82rem;">BI-ASM-001-F1 v1.0</span>
-              </div>
+            <div class="provenance provenance--prose" style="margin-bottom:var(--sp-m);">
+              <div class="provenance__row"><span class="provenance__key">Summary</span><span class="provenance__val">Steady block. Edge control is improving; crossovers still break under speed.</span></div>
+              <div class="provenance__row"><span class="provenance__key">Strengths</span><span class="provenance__val">Attendance, effort in drills, listens to correction.</span></div>
+              <div class="provenance__row"><span class="provenance__key">Current focus</span><span class="provenance__val">Edge control on the inside edge.</span></div>
+              <div class="provenance__row"><span class="provenance__key">Priorities</span><span class="provenance__val">Crossover speed; stopping balance.</span></div>
             </div>
-
-            <p class="small muted" style="margin-top:var(--sp-m);">
-              A blank is a blank. An unrecorded measurement is shown as not recorded — never as zero,
-              never as an empty cell, and never as a poor result.
-            </p>
-
             <hr class="rule" style="margin-block:var(--sp-m);">
-
-            <p class="marker" style="margin-bottom:var(--sp-s);">Provenance</p>
+            <p class="marker" style="margin-bottom:var(--sp-s);">Evidence it rests on</p>
+            <div class="fields">
+              <div class="field"><span class="field__label">Sessions recorded</span><span class="field__value mono">12</span></div>
+              <div class="field"><span class="field__label">Attendance</span><span class="field__value mono">11 / 12</span></div>
+              <div class="field"><span class="field__label">Assessment</span><span class="field__value mono" style="font-size:0.82rem;">BI-ASM-001-F1 v1.0</span></div>
+            </div>
+            <p class="marker" style="margin:var(--sp-m) 0 var(--sp-s);">Provenance</p>
             <div class="provenance">
-              <div class="provenance__row"><span class="provenance__key">Recorded by</span><span class="provenance__val">Identified coach, named organisation</span></div>
-              <div class="provenance__row"><span class="provenance__key">Session reference</span><span class="provenance__val">Server-generated at session open</span></div>
-              <div class="provenance__row"><span class="provenance__key">Roster</span><span class="provenance__val">Frozen when the session opened</span></div>
-              <div class="provenance__row"><span class="provenance__key">Protocol version</span><span class="provenance__val">Recorded with the entry</span></div>
+              <div class="provenance__row"><span class="provenance__key">Written by</span><span class="provenance__val">Identified coach, named organisation</span></div>
+              <div class="provenance__row"><span class="provenance__key">Published</span><span class="provenance__val">By the coach, to the family</span></div>
               <div class="provenance__row"><span class="provenance__key">Verification</span><span class="provenance__val">Attested, not independently verified</span></div>
             </div>
           </div>
         </div>
-
-      <div class="grid grid--3" style="margin-top:var(--sp-xl);">
-        <div>
-          <h4>What this is not</h4>
-          <p class="muted">There is no composite score, no ranking, no percentile and no seal.
-          Metrics stay attached to their organisation and discipline; nothing blends a skating
-          session with a football one into a single number about a child.</p>
-        </div>
-        <div>
-          <h4>One session, one open record</h4>
-          <p class="muted">Opening a session creates its reference and freezes the roster. A closed
-          session refuses new evidence, which is what makes the register worth reading later.</p>
-        </div>
-        <div>
-          <h4>Every number has an origin</h4>
-          <p class="muted">Who entered it, when, under which organisation, and against which
-          versioned protocol where one applies. That is what makes a record checkable rather than
-          merely old.</p>
-        </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <!-- 6 — PROVENANCE / TRUST -------------------------------------------->
+  <section class="section section--surface">
     <div class="container">
       <div class="head">
-        <span class="marker">04 — Who it is for</span>
-        <h2>Academies, independent coaches, and the families they report to.</h2>
+        <span class="marker">Provenance</span>
+        <h2>Recorded, coach-attested and independently verified are different things.</h2>
+        <p class="muted">Athlytica shows the state of every entry, and the state is a word, not a colour.</p>
+      </div>
+      <div class="state-list grid grid--3">
+        <div class="state-list__item">
+          <span class="chip chip--recorded">Recorded</span>
+          <p style="margin-top:var(--sp-2xs);">Captured with its source, session, time and author.</p>
+        </div>
+        <div class="state-list__item">
+          <span class="chip chip--attested">Coach-attested</span>
+          <p style="margin-top:var(--sp-2xs);">A named coach, affiliated to a named organisation, stands behind it.</p>
+        </div>
+        <div class="state-list__item">
+          <span class="chip chip--verified">Independently verified</span>
+          <p style="margin-top:var(--sp-2xs);">Checked by someone other than the recorder. <strong>Not currently claimed.</strong></p>
+        </div>
+      </div>
+      <p style="margin-top:var(--sp-l);max-width:60ch;"><strong>Athlytica does not currently claim independent verification where none exists.</strong></p>
+      <div class="btn-row" style="margin-top:var(--sp-m);">
+        <a class="btn btn--primary" href="/trust" data-track="home_trust">Read how evidence is handled</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 — PRODUCT PROOF -------------------------------------------------->
+  <section class="section" id="product">
+    <div class="container">
+      <div class="head">
+        <span class="marker">The product</span>
+        <h2>From the academy to the family, one record.</h2>
+        <p class="muted">Illustrative views built from sample data. No real athlete, organisation or customer is shown.</p>
       </div>
       <div class="grid grid--2">
-        <a class="card" href="/organizations" data-track="home_orgs" style="text-decoration:none;">
-          <h3>Organizations</h3>
-          <p>Academies, independent coaches, clubs and schools — the people who run the sessions and
-          record the work. They are Athlytica's current operational users.</p>
-          <p style="margin-top:var(--sp-s);"><strong>What a pilot involves →</strong></p>
-        </a>
-        <a class="card" href="/athletes" data-track="home_athletes" style="text-decoration:none;">
-          <h3>Athletes &amp; guardians</h3>
-          <p>The athlete is the subject of the record and its long-term owner. Guardian access is
-          invitation-only and under controlled validation.</p>
-          <p style="margin-top:var(--sp-s);"><strong>What the record means for an athlete →</strong></p>
-        </a>
+        <div class="sample">
+          <p class="sample__banner"><span>1 · Academy view</span><span>Sample data</span></p>
+          <div class="sample__body">
+            <div class="fields">
+              <div class="field"><span class="field__label">Coaches recording</span><span class="field__value mono">4</span></div>
+              <div class="field"><span class="field__label">Sessions this month</span><span class="field__value mono">18</span></div>
+              <div class="field"><span class="field__label">Reviews to publish</span><span class="field__value mono">3</span></div>
+            </div>
+            <p class="small muted" style="margin-top:var(--sp-s);">What coaches are recording, and what is waiting on a decision.</p>
+          </div>
+        </div>
+        <div class="sample">
+          <p class="sample__banner"><span>2 · Coach athlete record</span><span>Sample data</span></p>
+          <div class="sample__body">
+            <div class="fields">
+              <div class="field"><span class="field__label">Sessions</span><span class="field__value mono">12</span></div>
+              <div class="field"><span class="field__label">Attendance</span><span class="field__value mono">11 / 12</span></div>
+              <div class="field"><span class="field__label">Standing jump</span><span class="field__value--not-recorded">Not recorded</span></div>
+            </div>
+            <p class="small muted" style="margin-top:var(--sp-s);">One athlete, in order. A blank is a blank, never a zero.</p>
+          </div>
+        </div>
+        <div class="sample">
+          <p class="sample__banner"><span>3 · Development Review</span><span>Sample data</span></p>
+          <div class="sample__body">
+            <p><span class="chip chip--attested">Coach-attested</span></p>
+            <p class="small muted" style="margin-top:var(--sp-s);">Written by the coach from the recorded evidence, then published on purpose.</p>
+          </div>
+        </div>
+        <div class="sample">
+          <p class="sample__banner"><span>4 · Family view</span><span>Sample data</span></p>
+          <div class="sample__body">
+            <div class="provenance">
+              <div class="provenance__row"><span class="provenance__key">Shown</span><span class="provenance__val">Attendance, sessions, published review</span></div>
+              <div class="provenance__row"><span class="provenance__key">Not shown</span><span class="provenance__val">Unpublished coach notes</span></div>
+            </div>
+            <p class="small muted" style="margin-top:var(--sp-s);">Only what the organisation has authorised and the coach has published.</p>
+          </div>
+        </div>
       </div>
-      <p class="small muted" style="margin-top:var(--sp-l);max-width:60ch;">
-        Scouts, federations, insurers and other decision-makers are potential future readers of a
-        verified record. None of them is a current Athlytica customer, and the product does not
-        behave as though they are.
+      <p class="small muted" style="margin-top:var(--sp-m);max-width:62ch;">
+        There is no composite score, no ranking and no percentile. Nothing blends one discipline into another.
       </p>
     </div>
   </section>
 
+  <!-- 8 — PILOT / TRIAL -------------------------------------------------->
+  <section class="section section--surface">
+    <div class="container">
+      <div class="head">
+        <span class="marker">Pilot &amp; trial</span>
+        <h2>Start with a conversation, then a 30-day pilot.</h2>
+        <p class="muted">Setup and data onboarding are confirmed with your organisation before real athlete data is entered. Terms are discussed after the demo.</p>
+      </div>
+      <div class="grid grid--2">
+        <div class="card">
+          <h3>Academy</h3>
+          <p>A founder-assisted 30-day pilot across your coaches and athletes.</p>
+          <p style="margin-top:var(--sp-m);"><a class="btn btn--secondary" href="https://app.athlyticahq.com/pilot?type=academy" data-track="home_pilot_academy">Discuss a 30-day founder-assisted pilot</a></p>
+        </div>
+        <div class="card">
+          <h3>Coach</h3>
+          <p>A 30-day trial for an independent coach running their own practice.</p>
+          <p style="margin-top:var(--sp-m);"><a class="btn btn--secondary" href="https://app.athlyticahq.com/pilot?type=coach" data-track="home_pilot_coach">Start or discuss a 30-day coach trial</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 — FINAL CTA ------------------------------------------------------>
   <section class="section section--dark">
     <div class="container">
       <div class="head">
         <span class="marker">Next step</span>
-        <h2>Run a pilot with your own athletes.</h2>
-        <p class="muted">Thirty days, your sessions, your athletes. At the end you have a record you can read — or you have learned that the model does not fit, which is also worth knowing.</p>
+        <h2>See how the record works.</h2>
+        <p class="muted">Ten minutes, with sample data. Bring your questions about your sport, your coaches and your families.</p>
       </div>
       <div class="btn-row" style="margin-top:0;">
-        <a class="btn btn--primary" href="https://app.athlyticahq.com/pilot" data-track="home_cta">Start a 30-day pilot</a>
-        <a class="btn btn--secondary" href="/trust" data-track="home_cta_trust">How evidence is handled</a>
+        <a class="btn btn--primary" href="/demo" data-track="home_cta_demo">See a 10-minute demo</a>
+        <a class="btn btn--secondary" href="mailto:info@athlyticahq.com" data-track="home_cta_contact">Contact Athlytica</a>
       </div>
-      <p class="small muted" style="margin-top:var(--sp-m);">
-        Free for 30 days. No card and no account are created — qualification happens in a conversation first.
-        Pilot availability depends on product, privacy and protocol readiness.
-      </p>
     </div>
   </section>
 
@@ -315,32 +357,33 @@
     <div class="footer__grid">
       <div>
         <a class="brand-lockup" href="/" aria-label="Athlytica — home" style="margin-bottom:var(--sp-s);">
-          <img src="/brand/logo/lockup-horizontal.svg" alt="Athlytica" width="556" height="130">
+          <img src="/brand/logo/lockup-compact.svg" alt="Athlytica" width="556" height="130">
         </a>
         <p class="small muted">Athlete record infrastructure · Nairobi, Kenya</p>
       </div>
       <div>
         <h4>Site</h4>
         <ul>
-          <li><a href="/">Overview</a></li>
-          <li><a href="/organizations">Organizations</a></li>
-          <li><a href="/athletes">Athletes &amp; guardians</a></li>
+          <li><a href="/organizations">For Academies</a></li>
+          <li><a href="/organizations#coaches">For Coaches</a></li>
+          <li><a href="/athletes">For Families</a></li>
           <li><a href="/trust">Trust &amp; evidence</a></li>
         </ul>
       </div>
       <div>
         <h4>Start</h4>
         <ul>
-          <li><a href="https://app.athlyticahq.com/pilot" data-track="footer_pilot">Start a 30-day pilot</a></li>
-          <li><a href="mailto:info@athlyticahq.com">info@athlyticahq.com</a></li>
-          <li><a href="https://app.athlyticahq.com/privacy" data-track="footer_privacy">Privacy &amp; data handling</a></li>
+          <li><a href="/demo" data-track="footer_demo">See a 10-minute demo</a></li>
+          <li><a href="mailto:info@athlyticahq.com" data-track="footer_contact">info@athlyticahq.com</a></li>
+          <li><a href="https://app.athlyticahq.com/login" data-track="footer_signin">Sign in</a></li>
         </ul>
       </div>
       <div>
-        <h4>Current state</h4>
+        <h4>Legal</h4>
         <ul>
+          <li><a href="https://app.athlyticahq.com/privacy" data-track="footer_privacy">Privacy &amp; data handling</a></li>
+          <li><a href="https://app.athlyticahq.com/terms" data-track="footer_terms">Terms</a></li>
           <li class="muted">Controlled pilots only</li>
-          <li class="muted">Readiness gates apply</li>
           <li class="muted">No independent verification claimed</li>
         </ul>
       </div>
